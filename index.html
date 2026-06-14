@@ -141,7 +141,7 @@
 
   <div class="redirecting">
     <div class="spinner"></div>
-    <div class="redirect-text" id="redirect-text">Mohon tunggu....</div>
+    <div class="redirect-text" id="redirect-text">Penjualan tiket Pentas Generasi 2026 telah ditutup.</div>
     <a class="manual-btn" id="manual-btn" href="#" style="display:none;">
       Klik di sini →
     </a>
@@ -161,13 +161,13 @@
 
   setTimeout(() => {
     window.location.href = REDIRECT_TO;
-  }, 2000);
+  }, 10000);
 
-  // Show manual button after 4 seconds in case auto-redirect fails
+  // Show manual button after 10 seconds in case auto-redirect fails
   setTimeout(() => {
     document.getElementById('redirect-text').textContent = 'Tap tombol di bawah jika tidak dialihkan otomatis:';
     btn.style.display = 'inline-block';
-  }, 4000);
+  }, 10000);
 </script>
 </body>
 </html>
